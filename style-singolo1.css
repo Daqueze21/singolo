@@ -94,3 +94,59 @@ body {
    color: #f06c64;
 }
 /* header */
+
+/* main */
+/* slider-block */
+.slider {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 594px;
+   padding: 0 40px 0 42px;
+   background-color: #f06c64;
+   border-bottom: solid 6px #ea676b; 
+}
+
+.button {
+   width: 16px;
+   height: 27px;
+   margin-bottom: 4px;
+   background-color: transparent;
+   cursor: pointer;
+   border: 0; 
+}
+
+.slider__button-left {
+   background-image: url(./assets/img/button.png);
+}
+
+.slider__button-left:hover {
+   background-image: url(./assets/img/button-hover.png);
+}
+
+.slider__button-right {
+   transform: rotate(180deg);
+   background-image: url(./assets/img/button.png);
+}
+
+.slider__button-right:hover {
+   background-image: url(./assets/img/button-hover.png);
+}
+
+.slider__phoneImg-vertical {
+   width: 240px;
+   height: 488px;
+   background-repeat: no-repeat;
+   margin-right: 18px;
+   background-image: url(./assets/img/phone-vertical.png);
+}
+
+.slider__phoneImg-horizontal {
+   height: 246px;
+   width: 484px;
+   background-repeat: no-repeat;
+   background-image: url(./assets/img/phone-horizontal.png);
+}
+/* slider-block */
+
+/* services */
