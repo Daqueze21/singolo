@@ -1,0 +1,29 @@
+@font-face {
+   font-family: "Lato-Regular";
+   src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+   font-family: "Lato-Semibold";
+   src: url("./assets/fonts/Lato-Semibold.ttf");
+}
+
+@font-face {
+   font-family: "Lato-Black";
+   src: url("./assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+   font-family: "Lato-Light";
+   src: url("./assets/fonts/Lato-Light.ttf");
+}
+
+body {
+   height: 100vh;
+   margin: 0 auto;
+}
+
+.wrapper {
+   max-width: 1020px;
+   margin: 0 auto;
+}
