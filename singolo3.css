@@ -91,7 +91,8 @@ body {
 }
 
 .form-field:hover {
-   border: solid 1px #2d303a;
+
+   background: #9d3f3a;
 }
 
 .form-field::placeholder {
@@ -99,7 +100,6 @@ body {
 }
 
 .submit {
-   margin-left: 450px;
    padding: 10px 50px;
    font-size: 12px;
    font-family: "Lato-Semibold", sans-serif; 
@@ -111,7 +111,7 @@ body {
 
 .submit:hover {
    cursor: pointer;
-   border: solid 1px #2d303a;
+   background: #9d3f3a;
 }
 /* contacts form block*/
 
@@ -150,10 +150,11 @@ body {
 
 .info__field:hover {
    cursor: pointer;
-   text-decoration: underline;
+   color: #b8b8b8;
 }
 
 .info__location {
+   margin-left: 3px;
    margin-right: 13px;
 }
 
@@ -166,3 +167,59 @@ body {
 }
 /* contacts info block */
 /* contacts block*/
+
+
+/* footer*/
+.footer {
+   background-color: #2d303a;
+   height: 76px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 40px 0 43px;
+}
+
+.messengers-icons__wrapper {
+   width: 152px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.copyright {
+   margin-left: -3px;
+   font-weight: 300;
+   font-size: 12px;
+   letter-spacing: -0.004em;
+   font-family: "Lato-Semibold",
+   sans-serif;
+   color: #666d89;
+}
+
+.messenger__icon {
+   display: block;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid #666d89;
+}
+
+.messenger__icon:hover {
+   border-color: black;
+}
+
+.messenger__facebook {
+   background: url(./assets/img/facebook.png) no-repeat 11px 8px;
+}
+
+.messenger__google {
+   background: url(./assets/img/google.png) no-repeat 8px 8px;
+}
+
+.messenger__twitter {
+   background: url(./assets/img/twitter.png) no-repeat 7px 9px;
+}
+
+.messenger__linkedIn {
+   background: url(./assets/img/linkedIn.png) no-repeat 8px 8px;
+}
