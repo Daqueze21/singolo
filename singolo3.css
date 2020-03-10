@@ -27,3 +27,142 @@ body {
    max-width: 1020px;
    margin: 0 auto;
 }
+
+/* contacts block*/
+.contacts {
+   background-color: #f06c64;
+   height: 562px;
+   border-bottom: solid 6px #ea676b;
+   padding: 43px 30px;
+}
+
+.section__header {
+   font-size: 30px;
+   line-height: 18px;
+   color: #666d89;
+   font-family: "Lato-Black", sans-serif;
+   padding: 27px 10px;
+   letter-spacing: 0.2px;
+}
+
+.section__description {
+   padding: 0 0 11px 10px;
+   letter-spacing: -0.77px;
+   text-align: justify;
+   font-size: 19px;
+   line-height: 30px;
+   color: #666d89;
+   font-family: "Lato-Regular", sans-serif;
+   font-weight: 300;
+}
+
+.contact-form {
+   display: flex;
+   margin: 33px 10px;
+   justify-content: space-between;
+}
+
+/* contacts form block*/
+.form {
+   flex: 2;
+   padding-right: 36px;
+}
+
+.form-field {
+   height: 34px;
+   width: 100%;
+   margin-bottom: 16px;
+   padding-left: 14px;
+   font-size: 11px;
+   font-family: "Lato-Semibold", sans-serif;
+   letter-spacing: 0.6px;
+   color: #f0d8d9;
+   background: #d6564f;
+   border: solid #d6564f 1px;
+   border-radius: 5px;
+   outline: none;
+}
+
+.form-field__textarea {
+   height: 190px;
+   padding: 10px 0px 0px 14px;
+   resize: none;
+   letter-spacing: 0.35px;
+}
+
+.form-field:hover {
+   border: solid 1px #2d303a;
+}
+
+.form-field::placeholder {
+   color: #f48c8f;
+}
+
+.submit {
+   margin-left: 450px;
+   padding: 10px 50px;
+   font-size: 12px;
+   font-family: "Lato-Semibold", sans-serif; 
+   color: #f0d8d9;
+   background-color: #d6564f;
+   border: solid #d6564f 1px;
+   border-radius: 5px;
+}
+
+.submit:hover {
+   cursor: pointer;
+   border: solid 1px #2d303a;
+}
+/* contacts form block*/
+
+/* contacts info block */
+.contact-form__info {
+   flex: 1;
+}
+
+.info__header {
+   font-size: 19px;
+   line-height: 18px;
+   color: #f0d8d9;
+   font-family: "Lato-Black", sans-serif;
+   letter-spacing: -0.43px;
+}
+
+.info__description {
+   padding: 11px 0 21px 0;
+   font-size: 12px;
+   line-height: 22px;
+   color: #f0d8d9;
+   font-family: "Lato-Semibold", sans-serif;
+   text-align: justify;
+   letter-spacing: -0.1px;
+}
+
+.info__field {
+   display: block;
+   margin-left: 1px;
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 22px;
+   color: #f0d8d9;
+   font-family: "Lato-Semibold", sans-serif;
+}
+
+.info__field:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.info__location {
+   margin-right: 13px;
+}
+
+.info__phone {
+   margin-right: 12px;
+}
+
+.info__mail {
+   margin-right: 10px;
+}
+/* contacts info block */
+/* contacts block*/
