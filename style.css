@@ -377,6 +377,88 @@ body {
 .portfolio-gallery__img12 {
    margin: -60px 0 0 -36px;
 }
-
 /* portfolio-gallery */
 /* portfolio*/
+
+/*about-us section*/
+.about-us {
+   background-color: #f2f2f2;
+   height: 642px;
+   border-bottom: solid 6px #ffffff;
+   padding: 42px 30px;
+}
+
+.employee_wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 34px;
+}
+
+.employee__card {
+   width: 300px;
+   height: 450px;
+}
+
+.employee-card__photo {
+   width: 300px;
+   height: 300px;
+   overflow: hidden;
+}
+
+.employee-card__name {
+   margin-top: 18px;
+   font-size: 19px;
+   line-height: 16px;
+   color: #666d89;
+   font-family: "Lato-Black", sans-serif;
+   letter-spacing: -0.8px;
+}
+
+.employee-card__description {
+   margin-top: 11px;
+   font-size: 12px;
+   line-height: 21px;
+   color: #767e9e;
+   font-family: "Lato-Semibold", sans-serif;
+   letter-spacing: -0.13px;
+   text-align: justify;
+}
+
+.messengers__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 152px;
+   margin-top: 24px;
+}
+
+.messenger__icon {
+   display: block;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid #666d89;
+}
+
+.messenger__icon:hover {
+   border-color: black;
+}
+
+.messenger__facebook {
+   background: url(./assets/img/facebook.png) no-repeat 11px 8px;
+}
+
+.messenger__google {
+   background: url(./assets/img/google.png) no-repeat 8px 8px;
+}
+
+.messenger__twitter {
+   background: url(./assets/img/twitter.png) no-repeat 7px 9px;
+}
+
+.messenger__linkedIn {
+   background: url(./assets/img/linkedIn.png) no-repeat 8px 8px;
+}
+
+/*about-us section*/
