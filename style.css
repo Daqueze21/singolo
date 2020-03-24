@@ -33,6 +33,9 @@ body {
    display: flex;
    justify-content: space-between;
    height: 89px;
+   position: sticky;
+   top: 0;
+   z-index: 2;
    padding: 0 2.5em;
    align-items: center;
    background-color: #2d303a;
@@ -86,7 +89,7 @@ body {
    display: none;
 }
 
-.nav__link_home {
+.nav__link_active {
    color: #f06c64;
 }
 
@@ -97,14 +100,28 @@ body {
 
 /* main */
 /* slider-block */
+.slider-section {
+   position: relative;
+}
+
 .slider {
-   display: flex;
    justify-content: space-between;
    align-items: center;
-   height: 594px;
    padding: 0 40px 0 42px;
+}
+
+.slider1 {
+   display: flex;
+   justify-content: space-evenly;
+   height: 594px;
    background-color: #f06c64;
    border-bottom: solid 6px #ea676b;
+}
+
+.slider2 {
+   height: 600px;
+   background-image: url(./assets/img/Slider2.png);
+   display: none;
 }
 
 .button {
@@ -117,6 +134,9 @@ body {
 }
 
 .slider__button-left {
+   position: absolute;
+   top: 279px;
+   left: 42px;
    background-image: url(./assets/img/button.png);
 }
 
@@ -125,6 +145,9 @@ body {
 }
 
 .slider__button-right {
+   position: absolute;
+   top: 279px;
+   right: 40px;
    transform: rotate(180deg);
    background-image: url(./assets/img/button.png);
 }
@@ -136,17 +159,40 @@ body {
 .slider__phoneImg-vertical {
    width: 240px;
    height: 488px;
+   position: relative;
    background-repeat: no-repeat;
-   margin-right: 18px;
+   margin-right: 3px;
    background-image: url(./assets/img/phone-vertical.png);
+}
+
+.phoneImg-vertical__blackScreen {
+   display: none;
+   position: absolute;
+   left: 13px;
+   top: 64px;
+   width: 189px;
+   height: 334px;
+   background-color: black;
 }
 
 .slider__phoneImg-horizontal {
    height: 246px;
    width: 484px;
+   position: relative;
    background-repeat: no-repeat;
    background-image: url(./assets/img/phone-horizontal.png);
 }
+
+.phoneImg-horizontal__blackScreen {
+   display: none;
+   position: absolute;
+   left: 60px;
+   top: 13px;
+   width: 334px;
+   height: 189px;
+   background-color: black; 
+}
+
 /* slider-block */
 
 /* services */

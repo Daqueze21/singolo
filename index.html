@@ -19,7 +19,7 @@
          <nav class="nav">
             <ul class="nav__list">
                <li class="nav__item">
-                  <a class="nav__link nav__link_home" href="#">home</a>
+                  <a class="nav__link nav__link_active" href="#">home</a>
                </li>
                <li class="nav__item">
                   <a class="nav__link" href="#">services</a>
@@ -39,21 +39,29 @@
 
       <main class="main">
 
-         <section class="slider">
-
+         <section class="slider-section">
+            <div id="home" class="home_block"></div>
             <button class="slider__button-left button">
             </button>
-            <div class="slider__phoneImg-vertical">
+
+            <div class="slider slider1">
+               <div class="slider__phoneImg-vertical">
+                  <div class="phoneImg-vertical__blackScreen"></div>
+               </div>
+               <div class="slider__phoneImg-horizontal">
+                  <div class="phoneImg-horizontal__blackScreen"></div>
+               </div>
             </div>
-            <div class="slider__phoneImg-horizontal">
-            </div>
+            
+            <div class="slider slider2"></div>
             <button class="slider__button-right button">
+
             </button>
          </section>
          <!-- slider-block -->
 
          <section class="services">
-
+            <div id="services" class="beacon"></div>
             <h2 class="services__header">Our Services</h2>
 
             <p class="services__description">
@@ -182,6 +190,7 @@
          <!-- services-block -->
 
          <section class="portfolio">
+            <div id="portfolio" class="portfolio-section"></div>
             <h2 class="section__header portfolio__header">Portfolio</h2>
 
             <p class="section__description portfolio__description">
