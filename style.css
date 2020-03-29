@@ -373,59 +373,19 @@ body {
    overflow: hidden;
 }
 
-.portfolio-gallery__img {
+.portfolio__img {
    width: 220px;
    height: 187px;
-   margin: 10px;
-   overflow: hidden;
+   margin: 10px;  
 }
 
-.portfolio-gallery__img1 {
-   margin: -11px 0 0 -8px;
+.portfolio-gallery__img {
+   order: 0;
 }
 
-.portfolio-gallery__img2 {
-   margin: -43px 0 0 -82px;
-}
-
-.portfolio-gallery__img3 {
-   margin: -1px 0 0 -11px;
-}
-
-.portfolio-gallery__img4 {
-   margin: -2px 0 0 -24px;
-}
-
-.portfolio-gallery__img5 {
-   margin: -16px 0 0 -10px;
-}
-
-.portfolio-gallery__img6 {
-   margin: -4px 0 0 -16px;
-}
-
-.portfolio-gallery__img7 {
-   margin: -39px 0 0 -31px;
-}
-
-.portfolio-gallery__img8 {
-   margin: -32px 0 0 -24px;
-}
-
-.portfolio-gallery__img9 {
-   margin: -2px 0 0 -16px;
-}
-
-.portfolio-gallery__img10 {
-   margin: -113px 0 0 -141px;
-}
-
-.portfolio-gallery__img11 {
-   margin: -175px 0 0 -144px;
-}
-
-.portfolio-gallery__img12 {
-   margin: -60px 0 0 -36px;
+.portfolio__img_active {
+   margin: 5px 5px 5px 5px;
+   border: #f06c64 solid 5px;
 }
 /* portfolio-gallery */
 /* portfolio*/

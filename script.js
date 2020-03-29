@@ -65,3 +65,40 @@ buttonRight.onclick = function() {
   slider[i].style.display = 'flex';
 };
 
+//portfolio
+const portfolioList = document.querySelector('.portfolio__nav-list');
+const portfolioImgs = document.querySelectorAll('.portfolio-gallery__img');
+
+
+//portflio image border
+const border = document.querySelector('.portfolio-gallery__wrapper');
+
+border.addEventListener('click', event => {
+  border
+    .querySelectorAll('.portfolio__img')
+    .forEach(el => el.classList.remove('portfolio__img_active'));
+  if (event.target.classList.contains('portfolio__img')) {
+    event.target.classList.add('portfolio__img_active');
+  }
+});
+
+//portflio image shuffle
+function imgShuffle() {
+  portfolioImgs.forEach(el => {
+    el.style.order = Math.floor(Math.random() * 12);
+  });
+};
+
+portfolioList.addEventListener('click', event => {
+  portfolioList
+    .querySelectorAll('.portfolio__link')
+    .forEach(el => el.classList.remove('portfolio__link_active'));
+
+  if (event.target.classList.contains('portfolio__link')) {
+    event.target.classList.add('portfolio__link_active');
+    imgShuffle();
+  }
+});
+
+
+
