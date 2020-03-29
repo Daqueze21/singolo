@@ -17,6 +17,9 @@
    font-family: "Lato-Light";
    src: url("./assets/fonts/Lato-Light.ttf");
 }
+html {
+   scroll-behavior: smooth;
+}
 
 body {
    height: 100vh;
@@ -96,6 +99,8 @@ body {
 .nav__link:hover {
    color: #f06c64;
 }
+
+
 /* header */
 
 /* main */
@@ -533,7 +538,7 @@ body {
    border-radius: 5px;
 }
 
-.submit:hover {
+.submitBtn:hover {
    cursor: pointer;
    background: #9d3f3a;
 }
@@ -591,6 +596,38 @@ body {
 }
 /* contacts info block */
 /* contacts section*/
+/* message-block */
+#message-block {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: #0008;
+}
+
+#message-block.hidden {
+   display: none;
+}
+
+#message {
+   position: absolute;
+   width: 250px;
+   height: 150px;
+   top: 50%;
+   left: 50%;
+   padding: 30px;
+   z-index: 1;
+   text-align: center;
+   font-family: "Lato-Semibold",
+   sans-serif;
+   background: #f06c64;
+   color: #f0d8d9;
+   border: solid #d6564f 1px;
+   border-radius: 5px;
+   opacity: 0.9;
+}
+/* message-block */
 
 /* footer*/
 .footer {

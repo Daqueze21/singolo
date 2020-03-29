@@ -100,5 +100,44 @@ portfolioList.addEventListener('click', event => {
   }
 });
 
+//form submiting
+const submitBtn = document.querySelector('.submitBtn');
+const closeBtn = document.querySelector('.closeBtn');
 
 
+submitBtn.addEventListener("click", event => {
+  const name = document.getElementById("name").value.toString();
+  const email = document.getElementById("email").value.toString();
+  const subject = document.getElementById("subject").value.toString();
+  const description = document.getElementById("description").value.toString();
+  
+  if (name && email) {
+    event.preventDefault();
+    if (subject) {
+      document.getElementById(
+        'result-subject'
+      ).innerText = `Subject: ${subject}`;
+    } else {
+      document.getElementById('result-subject').innerText = `No subject`;
+    }
+
+    if (description) {
+      document.getElementById(
+        'result-description'
+      ).innerText = `Description: ${description}`;
+    } else {
+      document.getElementById(
+        'result-description'
+      ).innerText = `No description`;
+    }
+
+    document.getElementById("message-block").classList.remove("hidden");
+  }
+});
+
+//
+closeBtn.addEventListener('click', () => {
+  document.getElementById('result-subject').innerText = '';
+  document.getElementById('result-description').innerText = '';
+  document.getElementById('message-block').classList.add('hidden');
+});

@@ -19,19 +19,19 @@
          <nav class="nav">
             <ul class="nav__list">
                <li class="nav__item">
-                  <a class="nav__link nav__link_active" href="#">home</a>
+                  <a class="nav__link nav__link_active" href="#home">home</a>
                </li>
                <li class="nav__item">
-                  <a class="nav__link" href="#">services</a>
+                  <a class="nav__link" href="#services">services</a>
                </li>
                <li class="nav__item">
-                  <a class="nav__link" href="#">portfolio</a>
+                  <a class="nav__link" href="#portfolio">portfolio</a>
                </li>
                <li class="nav__item">
-                  <a class="nav__link" href="#">about</a>
+                  <a class="nav__link" href="#about">about</a>
                </li>
                <li class="nav__item">
-                  <a class="nav__link " href="#">contact</a>
+                  <a class="nav__link " href="#contact">contact</a>
                </li>
             </ul>
          </nav>
@@ -39,8 +39,7 @@
 
       <main class="main">
 
-         <section class="slider-section">
-            <div id="home" class="home_block"></div>
+         <section class="slider-section" id="home">
             <button class="slider__button-left button">
             </button>
 
@@ -60,8 +59,8 @@
          </section>
          <!-- slider-block -->
 
-         <section class="services">
-            <div id="services" class="beacon"></div>
+         <section class="services" id="services">
+         
             <h2 class="services__header">Our Services</h2>
 
             <p class="services__description">
@@ -189,8 +188,8 @@
          </section>
          <!-- services-block -->
 
-         <section class="portfolio">
-            <div id="portfolio" class="portfolio-section"></div>
+         <section class="portfolio" id="portfolio">
+             
             <h2 class="section__header portfolio__header">Portfolio</h2>
 
             <p class="section__description portfolio__description">
@@ -292,7 +291,8 @@
          </section>
          <!-- portfolio-section -->
 
-         <section class="about-us">
+         <section class="about-us" id="about">
+             
             <h2 class="section__header">About Us</h2>
             <p class="section__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
@@ -360,7 +360,8 @@
          </section>
          <!-- about-us-section -->
 
-         <section class="contacts">
+         <section class="contacts" id="contact">
+            
             <h2 class="section__header">Get a Quote</h2>
             <p class="section__description">
                Fusce dapibus, tellus ac cursus commodo tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -370,12 +371,13 @@
 
             <div class="contact-form">
                <form method="POST" class="form">
-                  <input type="text" class="form-field" name="name" placeholder="Name (Required)" required>
-                  <input type="email" class="form-field" name="email" placeholder="Email (Required)" required>
-                  <input type="text" class="form-field" name="subject" placeholder="Subject">
-                  <textarea name="message" class="form-field form-field__textarea"
+                  <input id="name" type="text" class="form-field" name="name" placeholder="Name (Required)" required>
+                  <input id="email" type="email" class="form-field" name="email" placeholder="Email (Required)"
+                     required>
+                  <input id="subject" type="text" class="form-field" name="subject" placeholder="Subject">
+                  <textarea id="description" name="message" class="form-field form-field__textarea"
                      placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                  <button type="submit" class="submit" formmethod="POST">Submit</button>
+                  <button type="submit" class="submit submitBtn">Submit</button>
                </form>
 
                <div class="contact-form__info">
@@ -403,6 +405,19 @@
             </div>
          </section>
          <!-- contacts-section -->
+
+         <div id="message-block" class="hidden">
+            <div id="message">
+               <h3>The letter was sent</h3>
+               <br>
+               <p id="result-subject">No subject </p>
+               <br>
+               <p id="result-description">No description </p>
+               <br>
+               <button class="submit closeBtn">OK</button>
+            </div>
+         </div>
+         <!-- message block -->
       </main>
 
       <footer class="footer">
