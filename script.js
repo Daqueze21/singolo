@@ -1,3 +1,21 @@
+
+// burger menu
+const burgerBtn = document.querySelector(".header__burger");
+const headerNav = document.querySelector(".nav");
+const logo = document.querySelector(".logo");
+
+burgerBtn.onclick = function() {
+  if (burgerBtn.classList.contains('active')) {
+    burgerBtn.classList.remove('active');
+    headerNav.classList.remove('active');
+    logo.classList.remove('active');
+  } else {
+    burgerBtn.classList.add('active');
+    headerNav.classList.add('active');
+    logo.classList.add('active');
+  }
+};
+
 // nav menu
 const navList = document.querySelector('.nav__list');
 
