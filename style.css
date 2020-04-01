@@ -123,28 +123,97 @@ body {
 
 /* main */
 /* slider-block */
+
 .slider-section {
    position: relative;
+   height: 37.5em;
+   scroll-margin-top: 97px;
 }
 
-.slider {
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 40px 0 42px;
+.slider__wrapper {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
 }
 
 .slider1 {
-   display: flex;
-   justify-content: space-evenly;
-   height: 594px;
+   display: block;
+   min-height: 594px;
    background-color: #f06c64;
    border-bottom: solid 6px #ea676b;
 }
 
+.slider1__flex {
+   padding: 50px 41px 0 42px;
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+}
+
 .slider2 {
-   height: 600px;
+   display: block;
+   min-height: 600px;
    background-image: url(./assets/img/Slider2.png);
+   background-size: cover;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+.slider {
    display: none;
+   position: relative;
+   margin: 0 auto;
+   animation: 0.9s ease-in-out;
+}
+
+.slider_active,
+.next {
+   display: block;
+}
+
+.next {
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.to-left {
+   animation-name: left;
+}
+
+.to-right {
+   animation-name: right;
+   animation-direction: reverse;
+}
+
+.from-left {
+   animation-name: left;
+   animation-direction: reverse;
+}
+
+.from-right {
+   animation-name: right;
+}
+
+@keyframes left {
+   from {
+      left: 0;
+   }
+
+   to {
+      left: -100%;
+   }
+}
+
+@keyframes right {
+   from {
+      left: 100%;
+   }
+
+   to {
+      left: 0;
+   }
 }
 
 .button {
@@ -154,6 +223,7 @@ body {
    background-color: transparent;
    cursor: pointer;
    border: 0;
+   outline: none;
 }
 
 .slider__button-left {
@@ -179,41 +249,64 @@ body {
    background-image: url(./assets/img/button-hover.png);
 }
 
-.slider__phoneImg-vertical {
+.phoneImg-vertical {
+   position: relative;
    width: 240px;
    height: 488px;
-   position: relative;
+   background-image: url("./assets/img/phone-vertical.png");
+   background-size: cover;
    background-repeat: no-repeat;
-   margin-right: 3px;
-   background-image: url(./assets/img/phone-vertical.png);
+   transition-duration: 1s;
 }
 
-.phoneImg-vertical__blackScreen {
-   display: none;
+.phoneImg-vertical__click {
    position: absolute;
-   left: 13px;
-   top: 64px;
-   width: 189px;
-   height: 334px;
+   width: 216px;
+   height: 458px;
+   opacity: 0;
+   border: 0;
+   border-radius: 30px;
+   z-index: 2;
+}
+
+.phoneImg-vertical__off {
+   position: absolute;
+   display: none;
+   width: 190px;
+   height: 337px;
+   left: 14px;
+   top: 65px;
    background-color: black;
 }
 
-.slider__phoneImg-horizontal {
-   height: 246px;
-   width: 484px;
+.phoneImg-horizontal {
    position: relative;
+   height: 240px;
+   width: 484px;
+   background-image: url("./assets/img/phone-horizontal.png");
+   background-size: cover;
    background-repeat: no-repeat;
-   background-image: url(./assets/img/phone-horizontal.png);
+   transition-duration: 1s;
 }
 
-.phoneImg-horizontal__blackScreen {
-   display: none;
+.phoneImg-horizontal__click {
    position: absolute;
-   left: 60px;
-   top: 13px;
-   width: 334px;
+   z-index: 2;
+   width: 458px;
+   height: 216px;
+   opacity: 0;
+   border: 0;
+   border-radius: 30px;
+}
+
+.phoneImg-horizontal__off {
+   position: absolute;
+   display: none;
+   width: 335px;
    height: 189px;
-   background-color: black; 
+   left: 59px;
+   top: 13px;
+   background-color: black;
 }
 
 /* slider-block */
@@ -349,8 +442,6 @@ body {
    background-color: #2d303a;
    border-bottom: solid 6px #323746;
 }
-
-
 
 /* portfolio__nav */
 .portfolio__nav-list {
@@ -612,8 +703,10 @@ body {
 .info__mail {
    margin-right: 10px;
 }
+
 /* contacts info block */
 /* contacts section*/
+
 /* message-block */
 #message-block {
    position: fixed;
@@ -703,7 +796,7 @@ body {
 }
 
 @media (max-width: 1019px) {
-   /* header */
+/* header */
    .header {
       height: 5.5em;
       padding: 0 2.4em;
@@ -722,21 +815,75 @@ body {
    }
 
 
-   /* header */
+/* header */
 
-   /* main */
+/* main */
+/* slider-block */
 
-   /* main */
+   .slider-section {
+      height: 28.3em;
+   }
 
-   /* footer */
+   .slider1__flex {
+      padding: 42px 34px 0 35px;
+   }
 
-   /* footer */
+   .phoneImg-vertical {
+      width: 181px;
+      height: 363px;
+   }
+
+   .phoneImg-vertical__click {
+      width: 10em;
+      height: 21.5em;
+   }
+
+   .phoneImg-vertical__off {
+      width: 142px;
+      height: 252px;
+      left: 10.5px;
+      top: 48px;
+   }
+
+   .phoneImg-horizontal {
+      width: 363px;
+      height: 181px;
+   }
+
+   .phoneImg-horizontal__click {
+      width: 345px;
+      height: 163px;
+   }
+
+   .phoneImg-horizontal__off {
+      width: 253px;
+      height: 143px;
+      left: 43px;
+      top: 10px;
+   }
+
+   .slider__button-left {
+      top: 213px;
+      left: 31px;
+   }
+
+   .slider__button-right {
+      top: 213px;
+      right: 28px;
+   }
+
+/* slider-block */
+/* main */
+
+/* footer */
+
+/* footer */
 
 }
 
 @media (max-width: 767px) {
 
-   /* header */
+/* header */
    .header {
       height: 4.1em;
    }
@@ -831,13 +978,65 @@ body {
       line-height: 38px;
       letter-spacing: -1.6px;
    }
-   /* header */
+/* header */
 
-   /* main */
+/* main */
+/* slider-block */
+   .slider-section {
+      height: 13.8em;
+   }
+   
+   .slider1__flex {
+         padding: 20px 19px 0 17px;
+   }
 
-   /* main */
+   .phoneImg-vertical {
+      width: 88px;
+      height: 177px;
+   }
 
-   /* footer */
+   .phoneImg-vertical__click {
+      width: 4.9em;
+      height: 10.5em;
+   }
 
-   /* footer */
+   .phoneImg-vertical__off {
+      width: 69px;
+      height: 122px;
+      left: 5.5px;
+      top: 24px;
+   }
+
+   .phoneImg-horizontal {
+      width: 177px;
+      height: 88px;
+   }
+
+   .phoneImg-horizontal__click {
+      width: 10.5em;
+      height: 4.9em;
+   }
+
+   .phoneImg-horizontal__off {
+      width: 122px;
+      height: 69px;
+      left: 22px;
+      top: 5px;
+   }
+
+   .slider__button-left {
+      top: 97px;
+      left: 8px;
+   }
+
+   .slider__button-right {
+      top: 97px;
+      right: 9px;
+   }
+/* slider-block */
+/* main */
+
+/* footer */
+
+/* footer */
 }
