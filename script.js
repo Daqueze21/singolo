@@ -1,3 +1,27 @@
+// navigation 
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+  const curPosition = window.scrollY;
+  const section = document.querySelectorAll('section');
+  const links = document.querySelectorAll('.nav__link');
+
+  section.forEach(el => {
+    if (
+      (el.offsetTop - 96 <= curPosition &&
+        el.offsetTop - 96 + el.offsetHeight > curPosition) ||
+      window.scrollY + window.innerHeight > 3526
+    ) {
+      links.forEach(a => {
+        a.classList.remove('nav__link_active');
+        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+          a.classList.add('nav__link_active');
+        }
+      });
+    }
+  });
+}
 
 // burger menu
 const burgerBtn = document.querySelector(".header__burger");
@@ -92,6 +116,7 @@ function nextItem(n) {
   changeCurrentItem(n + 1);
   showItem('from-right');
 }
+
 document
   .querySelector('.slider__button-left')
   .addEventListener('click', function() {
