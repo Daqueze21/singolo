@@ -806,29 +806,31 @@ body {
 
 /* footer*/
 .footer {
-   background-color: #2d303a;
-   height: 76px;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   height: 76px;
    padding: 0 40px 0 43px;
+   background-color: #2d303a; 
 }
 
 .messengers-icons__wrapper {
-   width: 152px;
    display: flex;
-   justify-content: space-between;
+   width: 152px;
    align-items: center;
+   justify-content: space-between;
+   margin-top: 24px;
+}
+
+.footer__icons {
+   margin-top: 1px;
 }
 
 .copyright {
-   margin-left: -3px;
-   font-weight: 300;
-   font-size: 12px;
-   letter-spacing: -0.004em;
-   font-family: "Lato-Semibold",
-      sans-serif;
    color: #666d89;
+   font-family: "Lato-Regular",
+   sans-serif;
+   font-size: 12px;
 }
 
 .messenger__icon {
@@ -1030,7 +1032,9 @@ body {
 /* main */
 
 /* footer */
-
+   .footer__icons {
+      margin-top: 2px;
+   }
 /* footer */
 
 }
@@ -1279,6 +1283,12 @@ body {
 /* main */
 
 /* footer */
+   .footer__icons {
+      margin: 0 auto;
+   }
 
+   .copyright {
+      display: none;
+   }
 /* footer */
 }
